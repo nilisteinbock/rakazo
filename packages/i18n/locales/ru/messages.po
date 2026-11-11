@@ -121,6 +121,11 @@ msgstr "{0} работает"
 msgid "{0} KB"
 msgstr "{0} КБ"
 
+#. placeholder {0}: usd(creditsUsd)
+#: apps/web/src/components/PlanUsage.tsx
+msgid "{0} left"
+msgstr ""
+
 #. placeholder {0}: parts.amount
 #: apps/web/src/components/ArtifactFileCard.tsx
 msgid "{0} MB"
@@ -141,6 +146,11 @@ msgstr "{0} ТБ"
 msgid "{0}, paused until you turn it on"
 msgstr "{0}, приостановлена, пока вы её не включите"
 
+#. placeholder {0}: Math.round(used)
+#: apps/web/src/components/PlanUsage.tsx
+msgid "{0}% used"
+msgstr ""
+
 #: apps/web/src/lib/billing.ts
 msgid "{amount} / {period}"
 msgstr "{amount} / {period}"
@@ -160,6 +170,10 @@ msgstr "{amount} в неделю"
 #: apps/mobile/lib/spending-limit.ts
 msgid "{amount} in total"
 msgstr "{amount} всего"
+
+#: apps/mobile/app/(settings)/account.tsx
+msgid "{amount} left"
+msgstr ""
 
 #: apps/mobile/lib/spending-limit.ts
 msgid "{amount} spent"
@@ -672,6 +686,10 @@ msgstr "{title}, сохранится как {savedAs}"
 #: apps/web/src/pages/plugins/connector-detail.tsx
 msgid "{toolCount, plural, one {# tool} other {# tools}}"
 msgstr "{toolCount, plural, one {# инструмент} few {# инструмента} many {# инструментов} other {# инструмента}}"
+
+#: apps/mobile/app/(settings)/account.tsx
+msgid "{used}% used"
+msgstr ""
 
 #: apps/mobile/components/vault-item-editor.tsx
 msgid "{variable} is reserved. Choose another name."
@@ -4112,9 +4130,11 @@ msgstr "Учётные данные: {names}"
 msgid "Credit amount"
 msgstr "Сумма кредитов"
 
+#: apps/mobile/app/(settings)/account.tsx
 #: apps/mobile/app/(settings)/billing.tsx
 #: apps/mobile/app/paywall.tsx
 #: apps/web/src/components/ModelCredits.tsx
+#: apps/web/src/components/PlanUsage.tsx
 msgid "Credits"
 msgstr "Кредиты"
 
@@ -6496,10 +6516,12 @@ msgstr "понедельник"
 msgid "month"
 msgstr "месяц"
 
+#: apps/mobile/app/(settings)/account.tsx
 #: apps/mobile/app/(settings)/spending-limit.tsx
 #: apps/mobile/app/paywall.tsx
 #: apps/mobile/lib/cron.ts
 #: apps/web/src/components/ModelCredits.tsx
+#: apps/web/src/components/PlanUsage.tsx
 #: apps/web/src/components/SpendingLimitSettings.tsx
 #: apps/web/src/lib/cron.ts
 msgid "Monthly"
@@ -8365,6 +8387,11 @@ msgstr "Сброс"
 msgid "Resets {date}."
 msgstr "Сброс {date}."
 
+#: apps/mobile/app/(settings)/account.tsx
+#: apps/web/src/components/PlanUsage.tsx
+msgid "Resets in {reset}"
+msgstr ""
+
 #: apps/web/src/components/ComputerMaintenanceActions.tsx
 msgid "Resetting…"
 msgstr "Сброс…"
@@ -8986,6 +9013,11 @@ msgstr "Имя сервера"
 #: apps/web/src/pages/VoiceSettingsOverlay.tsx
 msgid "Server URL"
 msgstr "URL-адрес сервера"
+
+#: apps/mobile/app/(settings)/account.tsx
+#: apps/web/src/components/PlanUsage.tsx
+msgid "Session"
+msgstr ""
 
 #: apps/web/src/components/SpendingLimitSettings.tsx
 msgid "Set"
@@ -10654,6 +10686,7 @@ msgid "URL"
 msgstr "URL"
 
 #: apps/mobile/app/(settings)/account.tsx
+#: apps/web/src/components/SidebarFooter.tsx
 #: apps/web/src/pages/settings-nav.ts
 msgid "Usage"
 msgstr "Использование"
@@ -10858,6 +10891,10 @@ msgstr "Показать все"
 msgid "View source"
 msgstr "Посмотреть исходный код"
 
+#: apps/web/src/components/SidebarFooter.tsx
+msgid "View usage"
+msgstr ""
+
 #: apps/mobile/app/(settings)/_layout.tsx
 #: apps/mobile/app/(settings)/account.tsx
 #: apps/mobile/app/(settings)/ai-data-sharing.tsx
@@ -10951,7 +10988,9 @@ msgstr "Будни"
 msgid "Weekends"
 msgstr "По выходным"
 
+#: apps/mobile/app/(settings)/account.tsx
 #: apps/mobile/app/(settings)/spending-limit.tsx
+#: apps/web/src/components/PlanUsage.tsx
 #: apps/web/src/components/SpendingLimitSettings.tsx
 msgid "Weekly"
 msgstr "Еженедельно"
