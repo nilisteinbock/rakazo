@@ -117,6 +117,8 @@ export function setDeviceDateFormatForTests(format: Partial<DeviceDateFormat>): 
 
 /** The app language, re-rendering when it changes. Strings come from Lingui's `useLingui`. */
 export function useUiLocale(): UiLocale {
+  // Screens pass this to `dateLocaleForUi`, so they also re-render when the phone's date settings change.
+  useDateLocale();
   return useSyncExternalStore(subscribeI18n, getActiveUiLocale, getActiveUiLocale);
 }
 
